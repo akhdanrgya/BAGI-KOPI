@@ -1,0 +1,32 @@
+{
+    "vision": {
+        "title": "Big Vision",
+        "statement": "“Menjadi wadah berbagi terbesar di Indonesia dengan produk berkualitas menghasilkan cita rasa terbaik serta menjadi tempat saling berbagi cerita, ilmu, kreatifitas dan segalanya”"
+    },
+    "values": {
+        "title": "Bagi Values",
+        "subtitle": "Misi Bagi Kopi",
+        "items": [
+            {
+                "letter": "B",
+                "name": "Best Quality",
+                "description": "Always serve and maintain product qualities with best ingredients, great services, and comfortable place with affordable price"
+            },
+            {
+                "letter": "A",
+                "name": "Agile",
+                "description": "Encourage great, effective, and efficient work ethics."
+            },
+            {
+                "letter": "G",
+                "name": "Growth",
+                "description": "Never stop to learn and innovate for the sake of excellent business growth."
+            },
+            {
+                "letter": "I",
+                "name": "Integrity",
+                "description": "Always working with honesty and keeping our words"
+            }
+        ]
+    }
+}

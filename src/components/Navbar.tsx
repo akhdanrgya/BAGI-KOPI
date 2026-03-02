@@ -22,23 +22,23 @@ export const Navbar = () => {
 
     const navClass = isTransparent
         ? "fixed top-0 left-0 w-full z-[100] px-6 py-6 transition-all duration-500 bg-transparent text-white border-b border-transparent"
-        : "fixed top-0 left-0 w-full z-[100] px-6 py-6 transition-all duration-500 bg-background/90 backdrop-blur-md text-foreground border-b border-foreground/10";
+        : "fixed top-0 left-0 w-full z-[100] px-6 py-6 transition-all duration-500 bg-white/90 backdrop-blur-md text-slate-900 border-b border-slate-200 shadow-sm";
 
-    const textClass = isTransparent ? "text-white/70 hover:text-white" : "text-foreground/70 hover:text-foreground";
+    const textClass = isTransparent ? "text-white/80 hover:text-white" : "text-slate-600 hover:text-primary";
 
     return (
         <nav className={navClass}>
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <Link href="/" className="text-xl font-bold tracking-tighter">
-                    BAGI KOPI.
+                <Link href="/" className={`text-2xl font-bold tracking-tight font-dm-sans transition-colors duration-500 ${isTransparent ? 'text-white' : 'text-primary'}`}>
+                    Bagi Kopi
                 </Link>
-                <div className={`hidden md:flex gap-8 text-sm font-medium tracking-widest uppercase ${textClass}`}>
-                    <Link href="#about" className="transition-colors">About</Link>
-                    <Link href="#menu" className="transition-colors">Menu</Link>
-                    <Link href="#locations" className="transition-colors">Locations</Link>
+                <div className={`hidden md:flex gap-8 text-sm font-semibold font-open-sans uppercase tracking-wider ${textClass}`}>
+                    <Link href="/" className="transition-colors">Home</Link>
+                    <Link href="#outlets" className="transition-colors">Outlets</Link>
+                    <Link href="#partnership" className="transition-colors">Partnership</Link>
                 </div>
                 <div className="flex gap-4 items-center">
-                    <button className="md:hidden text-sm uppercase tracking-widest hidden">
+                    <button className={`md:hidden text-sm uppercase tracking-widest font-open-sans ${textClass}`}>
                         Menu
                     </button>
                 </div>

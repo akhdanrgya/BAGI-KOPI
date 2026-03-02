@@ -1,0 +1,156 @@
+{
+    "menu": [
+        {
+            "category": "Signature Coffee",
+            "items": [
+                {
+                    "name": "Bagi Akal Sehat",
+                    "description": "Es Kopi Susu dengan kandungan gula putih khusus. bantu kamu buat netralin pikiran yang penat.",
+                    "prices": {
+                        "R": 18.18,
+                        "L": 22.72,
+                        "1L": 72.72
+                    }
+                },
+                {
+                    "name": "Bagi Blangkon",
+                    "description": "Es Kopi Susu dengan kandungan gula organik khusus, bantu kamu biar siap ngadepin hari yang sepi.",
+                    "prices": {
+                        "R": 20.90,
+                        "L": 25.45,
+                        "1L": 77.27
+                    }
+                },
+                {
+                    "name": "Bagi Ingatan",
+                    "description": "Es Kopi Susu yang ngingetin sama kejayaan masa muda dulu, ehh..tentu yang positif dong.",
+                    "prices": {
+                        "R": 22.72,
+                        "L": 27.27,
+                        "1L": 100.00
+                    }
+                },
+                {
+                    "name": "Bagi Kasih Sayang",
+                    "description": "Es Kopi Susu yang mengandung kacang hazel, buat yang kangen perasaan manis kasih sayang.",
+                    "prices": {
+                        "R": 22.72,
+                        "L": 27.27,
+                        "1L": 100.00
+                    }
+                },
+                {
+                    "name": "Kepastian",
+                    "description": "Es Kopi Susu untuk yang bimbang namun selalu menuntut kepastian, tentu rasanya enak luar biasa.. gaada yang ngalahin!",
+                    "prices": {
+                        "R": 22.72,
+                        "L": 27.27,
+                        "1L": null
+                    }
+                },
+                {
+                    "name": "Bagi Avocado",
+                    "description": "Es Kopi Signature dan paduan rasa buah alpukat. segar dan sehat bikin kamu selalu terpikat.",
+                    "prices": {
+                        "R": 20.00,
+                        "L": 24.54,
+                        "1L": 100.00
+                    }
+                },
+                {
+                    "name": "Caramel Macchiato",
+                    "description": null,
+                    "prices": {
+                        "R": 24.54,
+                        "L": null,
+                        "1L": null
+                    }
+                }
+            ]
+        },
+        {
+            "category": "Bagi Series (Non-Coffee)",
+            "items": [
+                {
+                    "name": "Chocolate",
+                    "description": null,
+                    "prices": {
+                        "R": 20.20,
+                        "L": 24.54,
+                        "1L": 77.27
+                    }
+                },
+                {
+                    "name": "Matcha",
+                    "description": null,
+                    "prices": {
+                        "R": 20.20,
+                        "L": 24.54,
+                        "1L": 77.27
+                    }
+                },
+                {
+                    "name": "Lemon Tea Signature",
+                    "description": null,
+                    "prices": {
+                        "R": 18.18,
+                        "L": null,
+                        "1L": null
+                    }
+                }
+            ]
+        },
+        {
+            "category": "Rice Bowl Series",
+            "items": [
+                {
+                    "name": "Karage Curry Rice Bowl",
+                    "description": "Daging paha ayam yang dibalut tepung pilihan dan bumbu Kare, dimakan pake nasi putih.. rasanya nendang!",
+                    "prices": {
+                        "R": 30.00
+                    }
+                },
+                {
+                    "name": "Beef Yakiniku Rice Bowl",
+                    "description": "Potongan daging sapi dengan bumbu Yakiniku, ditambah nasi putih jadi paduan cita rasa yang meriah!",
+                    "prices": {
+                        "R": 34.54
+                    }
+                },
+                {
+                    "name": "Chicken Nanban Rice Bowl",
+                    "description": "Potongan daging ayam dengan bumbu Nan-ban yang otentik, pake nasi putih jadi kombinasi rasa yang tak ada dua.",
+                    "prices": {
+                        "R": 30.00
+                    }
+                }
+            ]
+        },
+        {
+            "category": "Snack Series",
+            "items": [
+                {
+                    "name": "Fries Bolognaise",
+                    "description": null,
+                    "prices": {
+                        "R": 27.27
+                    }
+                },
+                {
+                    "name": "Tahu Walik",
+                    "description": null,
+                    "prices": {
+                        "R": 22.70
+                    }
+                },
+                {
+                    "name": "Chicken Wings",
+                    "description": null,
+                    "prices": {
+                        "R": 27.27
+                    }
+                }
+            ]
+        }
+    ]
+}

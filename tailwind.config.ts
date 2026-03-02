@@ -11,8 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "var(--primary)",
+        primary: "#0076F8",
         "primary-foreground": "var(--primary-foreground)",
+      },
+      fontFamily: {
+        "dm-sans": ["var(--font-dm-sans)", "sans-serif"],
+        "open-sans": ["var(--font-open-sans)", "sans-serif"],
+        "manrope": ["var(--font-manrope)", "sans-serif"],
       },
     },
   },
