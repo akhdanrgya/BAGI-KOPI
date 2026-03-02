@@ -17,6 +17,7 @@ const manrope = Manrope({
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { InitialLoader } from "@/components/InitialLoader";
 
 export const metadata: Metadata = {
   title: "Bagi Kopi | MVP",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${openSans.variable} ${manrope.variable} font-manrope antialiased`}
       >
+        <InitialLoader />
         <Navbar />
         {children}
         <Footer />
