@@ -54,49 +54,49 @@ export function HeroParallax() {
         {/* Beat A: 0 - 20% */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <motion.div style={{ opacity: opacityA, y: yA }}>
-            <h1 className="text-6xl md:text-9xl font-bold tracking-tighter text-white/90 mb-6 drop-shadow-2xl font-dm-sans">
+            <h1 className="text-5xl md:text-9xl font-bold tracking-tighter text-white/90 mb-4 md:mb-6 drop-shadow-2xl font-dm-sans">
               BAGI KOPI
             </h1>
-            <p className="text-xl md:text-3xl text-white/60 font-light tracking-wide max-w-xl mx-auto drop-shadow-md font-open-sans">
+            <p className="text-lg md:text-3xl text-white/60 font-light tracking-wide max-w-xl mx-auto drop-shadow-md font-open-sans">
               A cup of comfort, assembled before your eyes.
             </p>
           </motion.div>
         </div>
 
         {/* Beat B: 25 - 45% */}
-        <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-32">
-          <motion.div style={{ opacity: opacityB, y: yB }} className="max-w-2xl text-left">
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white/90 mb-6 drop-shadow-2xl leading-tight font-dm-sans">
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-32 text-center md:text-left">
+          <motion.div style={{ opacity: opacityB, y: yB }} className="max-w-2xl mx-auto md:mx-0">
+            <h2 className="text-4xl md:text-7xl font-bold tracking-tighter text-white/90 mb-4 md:mb-6 drop-shadow-2xl leading-tight font-dm-sans">
               THE PERFECT<br />EXTRACTION
             </h2>
-            <p className="text-lg md:text-2xl text-white/60 font-light tracking-wide drop-shadow-md font-open-sans">
+            <p className="text-base md:text-2xl text-white/60 font-light tracking-wide drop-shadow-md font-open-sans">
               Premium beans, extracted to absolute perfection.
             </p>
           </motion.div>
         </div>
 
         {/* Beat C: 50 - 70% */}
-        <div className="absolute inset-0 flex flex-col justify-center items-end px-8 md:px-32 text-right">
+        <div className="absolute inset-0 flex flex-col justify-center items-center md:items-end px-6 md:px-32 text-center md:text-right">
           <motion.div style={{ opacity: opacityC, y: yC }} className="max-w-2xl">
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white/90 mb-6 drop-shadow-2xl leading-tight font-dm-sans">
+            <h2 className="text-4xl md:text-7xl font-bold tracking-tighter text-white/90 mb-4 md:mb-6 drop-shadow-2xl leading-tight font-dm-sans">
               CREAMY<br />SYMPHONY
             </h2>
-            <p className="text-lg md:text-2xl text-white/60 font-light tracking-wide drop-shadow-md font-open-sans">
+            <p className="text-base md:text-2xl text-white/60 font-light tracking-wide drop-shadow-md font-open-sans">
               Swirling fresh milk meets authentic palm sugar.
             </p>
           </motion.div>
         </div>
 
         {/* Beat D: 75 - 95% */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 mt-[25vh]">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 mt-[15vh] md:mt-[25vh]">
           <motion.div style={{ opacity: opacityD, y: yD }}>
-            <h2 className="text-5xl md:text-8xl font-bold tracking-tighter text-white/90 mb-8 drop-shadow-2xl font-dm-sans">
-              YOUR DAILY DOSE
+            <h2 className="text-5xl md:text-8xl font-bold tracking-tighter text-white/90 mb-6 md:mb-8 drop-shadow-2xl font-dm-sans leading-tight">
+              YOUR DAILY<br className="md:hidden" /> DOSE
             </h2>
-            <p className="text-xl md:text-2xl text-white/60 font-light tracking-wide max-w-xl mx-auto mb-10 drop-shadow-md font-open-sans">
-              Ready to drink, ready to inspire. Grab yours today.
+            <p className="text-lg md:text-2xl text-white/60 font-light tracking-wide max-w-xl mx-auto mb-8 md:mb-10 drop-shadow-md font-open-sans">
+              Ready to drink, ready to inspire.<br className="hidden md:block" /> Grab yours today.
             </p>
-            <button className="px-10 py-4 bg-white/90 text-[#050505] font-semibold tracking-widest text-sm uppercase hover:bg-white transition-all transform hover:scale-105 rounded-full pointer-events-auto backdrop-blur-sm shadow-xl font-open-sans">
+            <button className="px-8 md:px-10 py-3.5 md:py-4 bg-white/90 text-[#050505] font-semibold tracking-widest text-xs md:text-sm uppercase hover:bg-white transition-all transform hover:scale-105 rounded-full pointer-events-auto backdrop-blur-sm shadow-xl font-open-sans">
               Order Now
             </button>
           </motion.div>
