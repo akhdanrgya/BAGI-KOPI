@@ -3,6 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import menuData from "@/data/menu.json";
+import dynamic from "next/dynamic";
+
+const PdfViewer = dynamic(() => import("./PdfViewer").then((m) => m.PdfViewer), {
+    ssr: false,
+    loading: () => (
+        <div className="flex items-center justify-center min-h-[400px]">
+            <div className="animate-spin rounded-full h-10 w-10 border-4 border-orange-400 border-t-transparent" />
+        </div>
+    ),
+});
 
 export function MenuSection() {
     const [activeCategory, setActiveCategory] = useState(menuData.menu[0].category);
@@ -16,9 +26,23 @@ export function MenuSection() {
                     <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans mb-4 tracking-tight text-slate-900">
                         Our Menu
                     </h2>
-                    <p className="font-open-sans max-w-2xl mx-auto text-slate-500">
+                    <p className="font-open-sans max-w-2xl mx-auto text-slate-500 mb-8">
                         Explore our carefully crafted selections, from our signature extractions to delightful bites.
                     </p>
+
+                    {/* PDF Menu Display */}
+                    <div className="w-full max-w-4xl mx-auto mb-16 bg-white p-2 md:p-4 rounded-3xl shadow-sm border border-slate-200">
+                        <div className="mb-4 px-4 text-left">
+                            <h3 className="text-lg font-bold text-slate-800 font-dm-sans">Digital Menu</h3>
+                        </div>
+                        <PdfViewer file="/api/menu-pdf" />
+                    </div>
+                </div>
+
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="h-px bg-slate-200 flex-1"></div>
+                    <span className="text-slate-400 font-open-sans text-sm uppercase tracking-widest font-semibold">Or Browse Catalog</span>
+                    <div className="h-px bg-slate-200 flex-1"></div>
                 </div>
 
                 {/* Category Tabs */}
