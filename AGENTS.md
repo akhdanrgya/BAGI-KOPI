@@ -13,11 +13,12 @@ Rebuild the Bagi Kopi Indonesia website into a modern, fast, and interactive web
 ## Design System & Styling Guidelines (CRITICAL FOR UI AGENT)
 Do not guess the design. The PDF menu reference cannot be seen visually, so you MUST strictly adhere to these UI translations:
 
-* **Colors**:
-    * **Primary**: `#0076F8` (Blue) - Use for active tabs, primary buttons, and section headers.
-    * **Accents**: Warm Orange/Amber (`text-orange-500` or `bg-orange-500`) - Use sparingly for prices or "New" badges to stimulate appetite and contrast with the blue.
-    * **Backgrounds**: Alternate between clean `bg-slate-50` (for readability) and deep `bg-zinc-900` (to create a premium cafe feel for specific categories like Signature Coffee).
-    * **Text**: `text-slate-900` for light backgrounds, `text-slate-400` for descriptions, `text-white` for dark backgrounds.
+* **Colors (CRITICAL)**:
+    * **Primary**: `#0076F8` (Blue) - Use heavily for large background blocks, heavy section headers, and primary buttons.
+    * **Base/Contrast**: `#FFFFFF` (White) - Use as the main clean background, card containers, and for text placed on top of Primary Blue backgrounds.
+    * **Accent**: `#EDB917` (Yellow) - Use sparingly ONLY for small accents, highlight badges, icons, or decorative shapes. Do not use for large backgrounds.
+    * **Soft Accent**: `#CEE8F5` (Light Blue) - Use very minimally for subtle borders or soft background section dividers.
+    * **Text**: `text-slate-900` for light backgrounds, `text-white` strictly for dark/blue backgrounds.
 * **Typography**:
     * **Headings/Titles (`font-dm-sans`)**: Use DM Sans for section headers ("Big Vision", "Our Journey") and Menu Item names. Use `font-bold` or `font-extrabold`.
     * **Subheadings/Buttons/Descriptions (`font-open-sans`)**: Use Open Sans for paragraphs, secondary text, and CTA buttons (`font-medium` or `font-semibold`).
