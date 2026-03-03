@@ -3,17 +3,22 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
     const [mounted, setMounted] = useState(false);
     const [isTransparent, setIsTransparent] = useState(true);
     const { scrollY } = useScroll();
+    const pathname = usePathname();
 
     useEffect(() => setMounted(true), []);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
-        // Change to solid when scrolled past the 400vh container
-        if (latest > window.innerHeight * 3.8) {
+        // Different thresholds for home vs other pages
+        const isHome = pathname === "/";
+        const threshold = isHome ? window.innerHeight * 3.8 : 50;
+
+        if (latest > threshold) {
             setIsTransparent(false);
         } else {
             setIsTransparent(true);

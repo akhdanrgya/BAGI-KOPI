@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PartnershipForm } from "@/components/PartnershipForm";
+import { FadeIn } from "@/components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Partnership | Bagi Kopi",
@@ -95,33 +96,38 @@ export default function PartnershipPage() {
     return (
         <main className="min-h-screen bg-slate-50">
             {/* Hero */}
-            <section className="relative w-full bg-[#050505] pt-36 pb-28 px-6 overflow-hidden">
+            <section className="relative w-full bg-primary pt-36 pb-28 px-6 overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 right-1/3 w-[600px] h-[600px] bg-primary/25 blur-[130px] rounded-full -translate-y-1/2" />
-                    <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-blue-500/15 blur-[100px] rounded-full translate-y-1/2" />
+                    <div className="absolute top-0 right-1/3 w-[600px] h-[600px] bg-white/20 blur-[130px] rounded-full -translate-y-1/2" />
+                    <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-white/10 blur-[100px] rounded-full translate-y-1/2" />
                 </div>
                 <div className="relative max-w-5xl mx-auto text-center z-10">
-                    <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/10 text-white/70 text-xs font-open-sans font-semibold uppercase tracking-widest border border-white/10">
-                        Jadi Mitra Kami
-                    </span>
-                    <h1 className="text-5xl md:text-7xl font-extrabold font-dm-sans text-white mb-6 leading-tight">
-                        Tumbuh Bersama{" "}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-                            Bagi Kopi
+                    <FadeIn delay={0.1}>
+                        <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/20 text-white text-xs font-open-sans font-semibold uppercase tracking-widest border border-white/20">
+                            Jadi Mitra Kami
                         </span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-white/60 font-open-sans max-w-2xl mx-auto leading-relaxed mb-10">
-                        Hadirkan pengalaman kopi premium yang menyatukan komunitas. Bersama kami, bangun bisnis yang menguntungkan sekaligus bermakna.
-                    </p>
-                    <a
-                        href="#form"
-                        className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold font-open-sans uppercase tracking-wide rounded-full shadow-lg shadow-primary/40 hover:bg-primary/90 hover:scale-105 transition-all"
-                    >
-                        Daftar Sekarang
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
+                    </FadeIn>
+                    <FadeIn delay={0.2}>
+                        <h1 className="text-5xl md:text-7xl font-extrabold font-dm-sans text-white mb-6 leading-tight">
+                            Tumbuh Bersama Bagi Kopi
+                        </h1>
+                    </FadeIn>
+                    <FadeIn delay={0.3}>
+                        <p className="text-lg md:text-xl text-white/90 font-open-sans max-w-2xl mx-auto leading-relaxed mb-10">
+                            Hadirkan pengalaman kopi premium yang menyatukan komunitas. Bersama kami, bangun bisnis yang menguntungkan sekaligus bermakna.
+                        </p>
+                    </FadeIn>
+                    <FadeIn delay={0.4}>
+                        <a
+                            href="#form"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-bold font-open-sans uppercase tracking-wide rounded-full shadow-lg shadow-black/10 hover:bg-white/90 hover:scale-105 transition-all"
+                        >
+                            Daftar Sekarang
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                    </FadeIn>
                 </div>
                 <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none" />
             </section>
@@ -130,22 +136,28 @@ export default function PartnershipPage() {
             <section className="py-24 px-6 md:px-12 bg-slate-50">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
-                            Mengapa Bermitra dengan Kami?
-                        </h2>
-                        <p className="text-slate-500 font-open-sans max-w-xl mx-auto">
-                            Dapatkan keuntungan nyata dengan bergabung bersama ekosistem Bagi Kopi.
-                        </p>
+                        <FadeIn delay={0.1}>
+                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
+                                Mengapa Bermitra dengan Kami?
+                            </h2>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <p className="text-slate-500 font-open-sans max-w-xl mx-auto">
+                                Dapatkan keuntungan nyata dengan bergabung bersama ekosistem Bagi Kopi.
+                            </p>
+                        </FadeIn>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {BENEFITS.map((b) => (
-                            <div key={b.title} className="group flex flex-col gap-4 p-7 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                                    {b.icon}
+                        {BENEFITS.map((b, i) => (
+                            <FadeIn key={b.title} delay={0.1 * (i + 1)}>
+                                <div className="group flex flex-col gap-4 p-7 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300 h-full">
+                                    <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                        {b.icon}
+                                    </div>
+                                    <h3 className="text-lg font-bold font-dm-sans text-slate-900">{b.title}</h3>
+                                    <p className="text-sm font-open-sans text-slate-500 leading-relaxed">{b.desc}</p>
                                 </div>
-                                <h3 className="text-lg font-bold font-dm-sans text-slate-900">{b.title}</h3>
-                                <p className="text-sm font-open-sans text-slate-500 leading-relaxed">{b.desc}</p>
-                            </div>
+                            </FadeIn>
                         ))}
                     </div>
                 </div>
@@ -155,29 +167,35 @@ export default function PartnershipPage() {
             <section className="py-24 px-6 md:px-12 bg-white border-y border-slate-100">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
-                            Proses Partnership
-                        </h2>
-                        <p className="text-slate-500 font-open-sans">Mudah, transparan, dan didampingi penuh oleh tim kami.</p>
+                        <FadeIn delay={0.1}>
+                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
+                                Proses Partnership
+                            </h2>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <p className="text-slate-500 font-open-sans">Mudah, transparan, dan didampingi penuh oleh tim kami.</p>
+                        </FadeIn>
                     </div>
                     <div className="flex flex-col gap-0">
                         {STEPS.map((step, i) => (
-                            <div key={step.num} className="flex gap-6 group">
-                                {/* Line + Circle */}
-                                <div className="flex flex-col items-center">
-                                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white font-bold font-dm-sans text-sm shrink-0 shadow-md shadow-primary/30">
-                                        {step.num}
+                            <FadeIn key={step.num} delay={0.1 * (i + 1)} direction="left">
+                                <div className="flex gap-6 group">
+                                    {/* Line + Circle */}
+                                    <div className="flex flex-col items-center">
+                                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white font-bold font-dm-sans text-sm shrink-0 shadow-md shadow-primary/30">
+                                            {step.num}
+                                        </div>
+                                        {i < STEPS.length - 1 && (
+                                            <div className="w-0.5 flex-1 bg-slate-200 my-2" />
+                                        )}
                                     </div>
-                                    {i < STEPS.length - 1 && (
-                                        <div className="w-0.5 flex-1 bg-slate-200 my-2" />
-                                    )}
+                                    {/* Content */}
+                                    <div className={`pb-${i < STEPS.length - 1 ? "10" : "0"} pt-2`}>
+                                        <h3 className="text-lg font-bold font-dm-sans text-slate-900 mb-1">{step.title}</h3>
+                                        <p className="text-sm font-open-sans text-slate-500 leading-relaxed pb-8">{step.desc}</p>
+                                    </div>
                                 </div>
-                                {/* Content */}
-                                <div className={`pb-${i < STEPS.length - 1 ? "10" : "0"} pt-2`}>
-                                    <h3 className="text-lg font-bold font-dm-sans text-slate-900 mb-1">{step.title}</h3>
-                                    <p className="text-sm font-open-sans text-slate-500 leading-relaxed pb-8">{step.desc}</p>
-                                </div>
-                            </div>
+                            </FadeIn>
                         ))}
                     </div>
                 </div>
@@ -187,16 +205,20 @@ export default function PartnershipPage() {
             <section className="py-24 px-6 md:px-12 bg-slate-50">
                 <div className="max-w-3xl mx-auto">
                     <div className="text-center mb-14">
-                        <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
-                            Pertanyaan Umum
-                        </h2>
+                        <FadeIn delay={0.1}>
+                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
+                                Pertanyaan Umum
+                            </h2>
+                        </FadeIn>
                     </div>
                     <div className="flex flex-col gap-4">
-                        {FAQS.map((faq) => (
-                            <div key={faq.q} className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-                                <h3 className="font-bold font-dm-sans text-slate-900 mb-2">{faq.q}</h3>
-                                <p className="text-sm font-open-sans text-slate-500 leading-relaxed">{faq.a}</p>
-                            </div>
+                        {FAQS.map((faq, i) => (
+                            <FadeIn key={faq.q} delay={0.1 * (i + 1)}>
+                                <div className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                                    <h3 className="font-bold font-dm-sans text-slate-900 mb-2">{faq.q}</h3>
+                                    <p className="text-sm font-open-sans text-slate-500 leading-relaxed">{faq.a}</p>
+                                </div>
+                            </FadeIn>
                         ))}
                     </div>
                 </div>
@@ -206,14 +228,20 @@ export default function PartnershipPage() {
             <section id="form" className="py-24 px-6 md:px-12 bg-white border-t border-slate-100">
                 <div className="max-w-2xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
-                            Daftar Partnership
-                        </h2>
-                        <p className="text-slate-500 font-open-sans">
-                            Isi formulir di bawah dan tim kami akan menghubungimu dalam 1–2 hari kerja.
-                        </p>
+                        <FadeIn delay={0.1}>
+                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4">
+                                Daftar Partnership
+                            </h2>
+                        </FadeIn>
+                        <FadeIn delay={0.2}>
+                            <p className="text-slate-500 font-open-sans">
+                                Isi formulir di bawah dan tim kami akan menghubungimu dalam 1–2 hari kerja.
+                            </p>
+                        </FadeIn>
                     </div>
-                    <PartnershipForm />
+                    <FadeIn delay={0.3}>
+                        <PartnershipForm />
+                    </FadeIn>
                 </div>
             </section>
         </main>
