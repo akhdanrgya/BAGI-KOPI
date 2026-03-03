@@ -2,27 +2,30 @@
 
 import { motion } from "framer-motion";
 import timelineData from "@/data/timeline.json";
+import { ScrollReveal } from "./ui/ScrollReveal";
 
 export function JourneyTimeline() {
     return (
         <section id="journey" className="w-full bg-white py-24 px-6 md:px-12 overflow-hidden">
             <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4 tracking-tight">
-                        Our Journey
-                    </h2>
-                    <p className="font-open-sans text-slate-500 max-w-2xl mx-auto">
-                        The milestones that shaped Bagi Kopi into what it is today.
-                    </p>
-                </div>
+                <ScrollReveal delay={0.1}>
+                    <div className="text-center mb-20">
+                        <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-slate-900 mb-4 tracking-tight">
+                            Our Journey
+                        </h2>
+                        <p className="font-open-sans text-slate-500 max-w-2xl mx-auto">
+                            The milestones that shaped Bagi Kopi into what it is today.
+                        </p>
+                    </div>
+                </ScrollReveal>
 
                 <div className="relative border-l-2 border-slate-100 ml-4 md:ml-0 md:border-l-0">
                     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-100 -translate-x-1/2"></div>
-                    
+
                     {timelineData.map((item, index) => {
                         const isEven = index % 2 === 0;
                         return (
-                            <motion.div 
+                            <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
