@@ -10,8 +10,8 @@ export const Footer = () => {
                 </div>
                 <div className="flex gap-8 text-sm text-white/60 uppercase tracking-widest font-open-sans font-semibold">
                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-                    <Link href="#outlets" className="hover:text-primary transition-colors">Outlets</Link>
-                    <Link href="#partnership" className="hover:text-primary transition-colors">Partnership</Link>
+                    <Link href="/outlets" className="hover:text-primary transition-colors">Outlets</Link>
+                    <Link href="/partnership" className="hover:text-primary transition-colors">Partnership</Link>
                 </div>
                 <p className="text-white/40 text-sm font-open-sans">© {new Date().getFullYear()} Bagi Kopi Indonesia.</p>
             </div>

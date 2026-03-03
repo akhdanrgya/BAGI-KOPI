@@ -1,0 +1,84 @@
+{
+    "outlets": [
+        {
+            "id": 1,
+            "name": "Bagi Kopi Dago",
+            "city": "Bandung",
+            "address": "Jl. Ir. H. Juanda No. 45, Dago, Coblong, Bandung",
+            "hours": "07.00 – 22.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+Dago+Bandung",
+            "whatsapp": "6281234567890",
+            "tag": "Flagship"
+        },
+        {
+            "id": 2,
+            "name": "Bagi Kopi BIP",
+            "city": "Bandung",
+            "address": "Bandung Indah Plaza Lt. 1, Jl. Merdeka No. 56, Bandung",
+            "hours": "10.00 – 21.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+BIP+Bandung",
+            "whatsapp": "6281234567891",
+            "tag": null
+        },
+        {
+            "id": 3,
+            "name": "Bagi Kopi Sudirman",
+            "city": "Jakarta",
+            "address": "Jl. Jend. Sudirman No. 12, Tanah Abang, Jakarta Pusat",
+            "hours": "07.00 – 21.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+Sudirman+Jakarta",
+            "whatsapp": "6281234567892",
+            "tag": null
+        },
+        {
+            "id": 4,
+            "name": "Bagi Kopi SCBD",
+            "city": "Jakarta",
+            "address": "Sequis Center Lt. G, Jl. Jend. Sudirman Kav. 71, Jakarta Selatan",
+            "hours": "07.00 – 20.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+SCBD+Jakarta",
+            "whatsapp": "6281234567893",
+            "tag": "New"
+        },
+        {
+            "id": 5,
+            "name": "Bagi Kopi Kelapa Gading",
+            "city": "Jakarta",
+            "address": "Mall Kelapa Gading 3 Lt. 2, Jl. Bulevar Kelapa Gading, Jakarta Utara",
+            "hours": "10.00 – 22.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+Kelapa+Gading+Jakarta",
+            "whatsapp": "6281234567894",
+            "tag": null
+        },
+        {
+            "id": 6,
+            "name": "Bagi Kopi Jogja Malioboro",
+            "city": "Yogyakarta",
+            "address": "Jl. Malioboro No. 78, Gedong Tengen, Yogyakarta",
+            "hours": "08.00 – 22.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+Malioboro+Yogyakarta",
+            "whatsapp": "6281234567895",
+            "tag": null
+        },
+        {
+            "id": 7,
+            "name": "Bagi Kopi UGM",
+            "city": "Yogyakarta",
+            "address": "Jl. Kaliurang KM 5, Sleman, Yogyakarta",
+            "hours": "07.00 – 23.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+UGM+Yogyakarta",
+            "whatsapp": "6281234567896",
+            "tag": null
+        },
+        {
+            "id": 8,
+            "name": "Bagi Kopi Surabaya Darmo",
+            "city": "Surabaya",
+            "address": "Jl. Darmo No. 33, Wonokromo, Surabaya",
+            "hours": "07.00 – 21.00",
+            "maps": "https://maps.google.com/?q=Bagi+Kopi+Darmo+Surabaya",
+            "whatsapp": "6281234567897",
+            "tag": "New"
+        }
+    ]
+}

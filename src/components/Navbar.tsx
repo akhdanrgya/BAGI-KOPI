@@ -34,8 +34,8 @@ export const Navbar = () => {
                 </Link>
                 <div className={`hidden md:flex gap-8 text-sm font-semibold font-open-sans uppercase tracking-wider ${textClass}`}>
                     <Link href="/" className="transition-colors">Home</Link>
-                    <Link href="#outlets" className="transition-colors">Outlets</Link>
-                    <Link href="#partnership" className="transition-colors">Partnership</Link>
+                    <Link href="/outlets" className="transition-colors">Outlets</Link>
+                    <Link href="/partnership" className="transition-colors">Partnership</Link>
                 </div>
                 <div className="flex gap-4 items-center">
                     <button className={`md:hidden text-sm uppercase tracking-widest font-open-sans ${textClass}`}>
