@@ -48,6 +48,7 @@ export const Navbar = () => {
                         <Link href="/" className="transition-colors">Home</Link>
                         <Link href="/outlets" className="transition-colors">Outlets</Link>
                         <Link href="/partnership" className="transition-colors">Partnership</Link>
+                        <Link href="/career" className="transition-colors">Career</Link>
                     </div>
 
                     {/* Mobile Toggle */}
@@ -99,6 +100,7 @@ export const Navbar = () => {
                             <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="py-2 border-b border-slate-100 hover:text-primary transition-colors">Home</Link>
                             <Link href="/outlets" onClick={() => setIsMobileMenuOpen(false)} className="py-2 border-b border-slate-100 hover:text-primary transition-colors">Outlets</Link>
                             <Link href="/partnership" onClick={() => setIsMobileMenuOpen(false)} className="py-2 border-b border-slate-100 hover:text-primary transition-colors">Partnership</Link>
+                            <Link href="/career" onClick={() => setIsMobileMenuOpen(false)} className="py-2 border-b border-slate-100 hover:text-primary transition-colors">Career</Link>
                         </div>
 
                         {/* Additional Info / Footer */}
