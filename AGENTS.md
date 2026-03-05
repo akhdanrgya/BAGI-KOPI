@@ -23,12 +23,11 @@ Do not guess the design. The PDF menu reference cannot be seen visually, so you 
     * **Headings/Titles (`font-dm-sans`)**: Use DM Sans for section headers ("Big Vision", "Our Journey") and Menu Item names. Use `font-bold` or `font-extrabold`.
     * **Subheadings/Buttons/Descriptions (`font-open-sans`)**: Use Open Sans for paragraphs, secondary text, and CTA buttons (`font-medium` or `font-semibold`).
     * **Global Body (`font-manrope`)**: Use Manrope as the default base font for the document body.
-* **Menu Card Layout (Grid)**:
-    * Layout: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`.
-    * Card Container: `flex flex-col p-5 rounded-2xl bg-white shadow-sm border border-slate-100 hover:shadow-md transition-shadow`. (Use `bg-zinc-800 border-zinc-700` for dark sections).
-    * Item Title: `text-lg font-semibold tracking-tight`.
-    * Description: `text-sm text-slate-500 mt-1 line-clamp-2`.
-    * Pricing Array: Since items have multiple sizes (R, L, 1L), display them in a flex row at the bottom of the card: `flex gap-4 mt-4 pt-4 border-t border-slate-100`. Example: `<span className="font-medium text-orange-600">R: 18K</span>`.
+* **Menu Section Layout (Split View & List)**:
+    * **Desktop Layout**: `grid grid-cols-1 lg:grid-cols-2`. Left column is a sticky visual/banner. Right column is the scrollable menu content.
+    * **Menu Styling**: DO NOT USE CARDS (no shadows, no boxes). Use a flat vertical list. 
+    * **Item Row**: `flex justify-between items-center py-4 border-b border-dashed border-slate-300`. Item name and description on the left, prices flexed on the right.
+    * **Tabs**: Sharp, rectangular tabs. Active tab gets Primary Blue (`#0076F8`) background with White text. Inactive tabs get White background with Blue text. Add subtle Yellow (`#EDB917`) accents on hover or as an active bottom border.
 
 ## Agent Roles & Responsibilities
 
