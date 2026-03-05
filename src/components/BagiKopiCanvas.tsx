@@ -23,7 +23,6 @@ export const BagiKopiCanvas = () => {
         let loadedCount = 0;
         const loadedImages: HTMLImageElement[] = [];
 
-        // The image naming follows ezgif-frame-001.jpg up to ezgif-frame-174.jpg
         for (let i = 1; i <= FRAME_COUNT; i++) {
             const img = new Image();
             const paddedIndex = String(i).padStart(3, "0");
@@ -40,7 +39,6 @@ export const BagiKopiCanvas = () => {
         }
     }, []);
 
-    // Draw current frame inside canvas
     useEffect(() => {
         if (!loaded || images.length === 0) return;
 
@@ -64,11 +62,9 @@ export const BagiKopiCanvas = () => {
                 return;
             }
 
-            // We ensure the canvas dimension matches viewport dynamically
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            // "cover" fit logic to keep the coffee cup fully covering the screen
             const hRatio = canvas.width / img.width;
             const vRatio = canvas.height / img.height;
             const ratio = Math.max(hRatio, vRatio);
@@ -78,7 +74,6 @@ export const BagiKopiCanvas = () => {
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Ensure the rest of the canvas is the pure void #050505
             ctx.fillStyle = "#050505";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
