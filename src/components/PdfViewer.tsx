@@ -42,8 +42,8 @@ export function PdfViewer({ file }: PdfViewerProps) {
                     <Page
                         pageNumber={currentPage}
                         width={Math.min(
-                            typeof window !== "undefined" ? window.innerWidth * 0.82 : 680,
-                            680
+                            typeof window !== "undefined" ? window.innerWidth * 0.85 : 400,
+                            typeof window !== "undefined" ? (window.innerHeight * 0.65) * (1 / 1.414) : 400 // Assuming basic 1:1.414 aspect ratio (A4)
                         )}
                         renderTextLayer={false}
                         renderAnnotationLayer={false}
