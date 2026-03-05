@@ -12,6 +12,7 @@ export const Footer = () => {
                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                     <Link href="/outlets" className="hover:text-primary transition-colors">Outlets</Link>
                     <Link href="/partnership" className="hover:text-primary transition-colors">Partnership</Link>
+                    <Link href="/career" className="hover:text-primary transition-colors">Career</Link>
                 </div>
                 <p className="text-white/40 text-sm font-open-sans">© {new Date().getFullYear()} Bagi Kopi Indonesia.</p>
             </div>
