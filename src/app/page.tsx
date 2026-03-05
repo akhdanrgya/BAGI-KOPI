@@ -1,4 +1,5 @@
 import { HeroParallax } from "@/components/HeroParallax";
+import { PromoSection } from "@/components/PromoSection";
 import { MenuSection } from "@/components/MenuSection";
 import { JourneyTimeline } from "@/components/JourneyTimeline";
 import { VisionValues } from "@/components/VisionValues";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <>
       <HeroParallax />
+      <PromoSection />
       <MenuSection />
       <JourneyTimeline />
       <VisionValues />
