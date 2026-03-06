@@ -8,14 +8,14 @@ const INSTAGRAM_POSTS = [
     { id: 2, image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 3, image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 4, image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 5, image: "https://images.unsplash.com/photo-1495474472205-16273708e31fc?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 6, image: "https://images.unsplash.com/photo-1507133750076-2eab21df2aeb?auto=format&fit=crop&q=80&w=600&h=600" },
+    { id: 5, image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80&w=600&h=600" },
+    { id: 6, image: "https://images.unsplash.com/photo-1498804103079-a6351b080096?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 7, image: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 8, image: "https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 9, image: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 10, image: "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&q=80&w=600&h=600" },
+    { id: 10, image: "https://images.unsplash.com/photo-1521017432531-fbd920768814?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 11, image: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 12, image: "https://images.unsplash.com/photo-1521154563821-bb50131ea81e?auto=format&fit=crop&q=80&w=600&h=600" }
+    { id: 12, image: "https://images.unsplash.com/photo-1497515113811-8280f2c411fd?auto=format&fit=crop&q=80&w=600&h=600" }
 ];
 
 export function InstagramFeed() {
@@ -39,10 +39,10 @@ export function InstagramFeed() {
                             <span className="text-primary font-bold font-open-sans uppercase tracking-widest text-sm">Follow Our Journey</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 font-dm-sans leading-tight">
-                            Share Your Moments
+                            Latest from Our Instagram
                         </h2>
                         <p className="mt-4 text-slate-600 font-open-sans text-lg">
-                            Tag us @bagikopiid to be featured on our page. Discover how our community enjoys their favorite brew every single day.
+                            Stay updated with our newest promotions, freshly brewed menus, and daily moments straight from @bagikopiid.
                         </p>
                     </motion.div>
 
@@ -65,7 +65,7 @@ export function InstagramFeed() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-2">
                     {INSTAGRAM_POSTS.map((post, index) => (
                         <motion.a
                             href="https://www.instagram.com/bagikopiid/"
