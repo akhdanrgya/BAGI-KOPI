@@ -21,8 +21,8 @@ export function HeroParallax() {
 
   // Fase 1 & 2: Koreografi Gelas Coffee
   // 0 - 0.3: Scale 1.8, Center
-  // 0.3 - 0.6: Scale ke 1, Pindah ke Kanan (25vw dari tengah)
-  const cupScale = useTransform(smoothProgress, [0, 0.3, 0.6, 1], [1.8, 1.8, 1, 1]);
+  // 0.3 - 0.6: Scale ke 1.3, Pindah ke Kanan (25vw dari tengah)
+  const cupScale = useTransform(smoothProgress, [0, 0.3, 0.6, 1], [1.8, 1.8, 1.3, 1.3]);
   const cupX = useTransform(smoothProgress, [0, 0.3, 0.6, 1], ["0vw", "0vw", "25vw", "25vw"]);
   
   // Rotasi: 0 -> miring -12deg saat bergerak -> kembali ke 0
@@ -68,7 +68,7 @@ export function HeroParallax() {
             willChange: "transform"
           }}
         >
-          <div className="w-96 h-96 rounded-full bg-[#EDB917] blur-[70px]" />
+          <div className="w-96 h-96 rounded-full bg-[#EDB917] blur-[120px]" />
         </motion.div>
 
         {/* Subject / Gelas Kopi (z-30) */}
