@@ -32,7 +32,7 @@ export default function OutletsPage() {
                     </FadeIn>
                     <FadeIn delay={0.3}>
                         <p className="text-lg md:text-xl text-white/90 font-open-sans max-w-2xl mx-auto leading-relaxed">
-                            Kopi terbaik selalu dekat darimu. Temukan outlet Bagi Kopi di kotamu dan rasakan pengalaman minum kopi yang berbeda.
+                            Untuk Lebih Dekat Dengan Kami, Silahkan Kunjungi atau Reservasi Dari Outlet Bagi Kopi Terdekat!
                         </p>
                     </FadeIn>
                 </div>
