@@ -9,13 +9,13 @@ const INSTAGRAM_POSTS = [
     { id: 3, image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 4, image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 5, image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 6, image: "https://images.unsplash.com/photo-1498804103079-a6351b080096?auto=format&fit=crop&q=80&w=600&h=600" },
+    { id: 6, image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 7, image: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 8, image: "https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 9, image: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 10, image: "https://images.unsplash.com/photo-1521017432531-fbd920768814?auto=format&fit=crop&q=80&w=600&h=600" },
+    { id: 10, image: "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&q=80&w=600&h=600" },
     { id: 11, image: "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&q=80&w=600&h=600" },
-    { id: 12, image: "https://images.unsplash.com/photo-1497515113811-8280f2c411fd?auto=format&fit=crop&q=80&w=600&h=600" }
+    { id: 12, image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=600&h=600" }
 ];
 
 export function InstagramFeed() {
