@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import valuesData from "@/data/values.json";
 import { ScrollReveal } from "./ui/ScrollReveal";
 
@@ -9,17 +10,24 @@ export function VisionValues() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
                     <ScrollReveal delay={0.1}>
-                        <div>
-                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-[#0076F8] mb-6">
-                                {valuesData.vision.title}
-                            </h2>
-                            <h3 className="text-2xl font-bold font-dm-sans text-primary mb-4 tracking-tight">
-                                {valuesData.values.subtitle}
-                            </h3>
+                        <div className="flex justify-center w-full h-full items-center">
+                            <Image
+                                src="/images/bagi-snacks.png"
+                                alt="Bagi Kopi Berbagi Lifestyle"
+                                width={600}
+                                height={600}
+                                className="w-full max-w-xl h-auto rounded-3xl shadow-xl object-cover"
+                            />
                         </div>
                     </ScrollReveal>
                     <ScrollReveal delay={0.2} direction="left">
-                        <div>
+                        <div className="flex flex-col justify-center text-left lg:pl-6">
+                            <h2 className="text-4xl md:text-5xl font-extrabold font-dm-sans text-[#0076F8] mb-4">
+                                {valuesData.vision.title}
+                            </h2>
+                            <h3 className="text-2xl font-bold font-dm-sans text-primary mb-6 tracking-tight">
+                                {valuesData.values.subtitle}
+                            </h3>
                             <p className="text-xl md:text-2xl font-open-sans font-light text-slate-800 leading-relaxed italic">
                                 {valuesData.vision.statement}
                             </p>

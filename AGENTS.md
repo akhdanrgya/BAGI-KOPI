@@ -1,7 +1,7 @@
 # Project: Bagi Kopi Website Rebuild (MVP)
 
 ## Overview
-Rebuild the Bagi Kopi Indonesia website into a modern, fast, and interactive web application. The primary brand color is Blue (`#0076F8`). The hero section already includes a custom parallax animation (spilled coffee and ice). The generated components must seamlessly integrate with this existing hero section.
+Rebuild the Bagi Kopi Indonesia website into a modern, fast, and interactive web application. The primary brand color is Blue (`#0076F8`).
 
 ## Tech Stack
 * Framework: Next.js (App Router)
@@ -23,6 +23,12 @@ Do not guess the design. The PDF menu reference cannot be seen visually, so you 
     * **Headings/Titles (`font-dm-sans`)**: Use DM Sans for section headers ("Big Vision", "Our Journey") and Menu Item names. Use `font-bold` or `font-extrabold`.
     * **Subheadings/Buttons/Descriptions (`font-open-sans`)**: Use Open Sans for paragraphs, secondary text, and CTA buttons (`font-medium` or `font-semibold`).
     * **Global Body (`font-manrope`)**: Use Manrope as the default base font for the document body.
+* **Hero Section Animation (HeroParallax)**:
+    * **CRITICAL:** DO NOT use HTML5 Canvas, frame-by-frame animations, or image sequences.
+    * **Asset:** Use a single static high-res image (`/images/hero-cup.png`).
+    * **Mechanic:** Implement **Sticky Scrollytelling** using Framer Motion (`useScroll`, `useTransform`, `useSpring`). 
+    * **Layout Behavior:** The parent wrapper must have a long scroll height (e.g., `h-[300vh]`). The inner content must be `sticky top-0 h-screen overflow-hidden`.
+    * **Choreography:** As the user scrolls, the static coffee cup image should transition from being massive and centered (at 0% scroll) to its normal size on the right side of the screen, while the hero text simultaneously fades in on the left.
 * **Menu Section Layout (Split View & List)**:
     * **Desktop Layout**: `grid grid-cols-1 lg:grid-cols-2`. Left column is a sticky visual/banner. Right column is the scrollable menu content.
     * **Menu Styling**: DO NOT USE CARDS (no shadows, no boxes). Use a flat vertical list. 
@@ -38,7 +44,6 @@ Do not guess the design. The PDF menu reference cannot be seen visually, so you 
     * Set up `next/font/google` for DM Sans, Open Sans, and Manrope.
     * Configure `tailwind.config.js` with the custom colors (`primary: '#0076F8'`) and and map the custom fonts into the Tailwind theme (`fontFamily: { 'dm-sans': [...], 'open-sans': [...], 'manrope': [...] }`).
     * Create the base `layout.tsx` including a responsive Navbar (Home, Outlets, Partnership) and Footer.
-    * Set up the integration point for the custom Hero Parallax component.
 
 ### 2. @DataAgent
 * **Role**: Structure the raw content into consumable data formats.
